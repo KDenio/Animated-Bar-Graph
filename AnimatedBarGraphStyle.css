@@ -1,0 +1,39 @@
+/* Animated Bar Graph for Composer - Version 1.2 ***********/
+/* Written by Kristopher L Denio - www.kristopherdenio.com */
+/* Distributed through FS Hacks - www.fshacks.com **********/
+/* Instructions for Install and Use at 
+ * www.fshacks.com/animated-bar-graph-v1-2/
+ */
+
+.FSH-GraphBar {
+  position: absolute;
+  bottom: 0px;
+  height: 1px;
+}
+
+.FSH-OverflowBar {
+  position: absolute;
+  bottom: 0px;
+  height: 1px;
+}
+
+.FSH-GoalAmount {
+  position: absolute;
+  top: -0.75em;
+  left: 105%;
+}
+
+.FSH-CurrentAmount {
+  position: absolute;
+  right: 105%;
+  margin-bottom: -1em;
+  bottom: 0px;
+}
+
+.FSH-StartAmount {
+  position: absolute;
+  bottom: -0.75em;
+  left: 105%;
+}
+
+

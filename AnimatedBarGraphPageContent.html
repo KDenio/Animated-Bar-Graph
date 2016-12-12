@@ -1,0 +1,49 @@
+<!-- Animated Bar Graph for Composer - Version 1.2 **********-->
+<!-- Written by Kristopher L Denio - www.kristopherdenio.com -->
+<!-- Distributed through FS Hacks - www.fshacks.com *********-->
+<!-- Instructions for Install and Use at 
+     www.fshacks.com/animated-bar-graph-v1-2/
+-->
+
+<script >  
+  
+/**** BEGIN USER DEFINED SETTINGS - SET VALUES FOR YOUR GRAPH ****/
+  
+  var startAmount = 0;        /* Beginning Amount for Graph */
+  var currentAmount = 60000;  /* Current Amount */
+  var goalAmount = 100000;    /* Goal Amount */
+  var animateTime = 2;        /* Animation time - fill over this number of seconds */
+  var valPrefix = "$";        /* Prefix for values e.g. $ -- If no prefix desired, use "" */
+  var valSuffix = "";         /* Suffix for values e.g. % -- If no suffix desired, use "" */
+</script>
+<style>
+  .FSH-GraphBackground {
+    height: 400px;      /* Height of the graph in pixels */
+    
+    margin-top: 25px;     /* Buffer space above the graph */
+    margin-bottom: 30px;  /* Buffer space below the graph */
+    
+    /* TO CENTER GRAPH, SET BOTH LEFT AND RIGHT MARGIN TO 'auto' */
+    /* Buffer space does NOT include text. */
+    /* Be sure to leave enough room for labels */
+    margin-left: auto;    /* Buffer space to the left of the graph */
+    margin-right: auto;   /* Buffer space to the right of the graph */
+    
+    background: #aa0000;  /* Background color for the graph */
+  }
+  .FSH-GraphBar,.FSH-OverflowBar,.FSH-GraphBackground {
+    width: 50px;  /* Width of the graph in pixels */
+                  /* This is only for the bar graph and doesn't include text */
+  }
+  .FSH-GraphBar {
+    background: #0000aa;  /* Fill color for the graph */
+  }
+  .FSH-OverflowBar {
+    background: #00aa00;  /* Overflow color; used if goal has been exceeded */
+  }
+  
+/**** END USER DEFINED SETTINGS - DO NOT EDIT ANYTHING BELOW THIS LINE ****/    
+  
+</style> 
+
+<div class="FSH-GraphBackground" style="position: relative;"><div class="FSH-GoalAmount">Goal</div><div class="FSH-CurrentAmount" style="bottom: 1%;">Current</div><div class="FSH-StartAmount">Start</div><div class="FSH-OverflowBar" style="height: 1%;"></div><div class="FSH-GraphBar" style="height: 1%;"></div></div>
